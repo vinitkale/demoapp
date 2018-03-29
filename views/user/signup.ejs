@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include ../partials/head %>
+</head>
+
+<body>
+
+    <header>
+        <% include ../partials/header %>
+    </header>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-3">Signup</h1>
+        </div>
+        <form action="/signup" method="post">
+
+          <label for="name">What's your name?</label>
+          <input name="name" class="form-control" type="text"/>
+          <br/>
+        
+          <label for="email">What's your email?</label>
+          <input name="email" class="form-control" type="text"/>
+          <br/>
+        
+          <label for="password">Choose a Password</label>
+          <input name="password" class="form-control" type="password"/>
+          <br/>
+        
+          <input class="btn btn-primary" type="submit"/>
+          <a class="btn btn-danger" href="/">Cancle</a>
+        </form>
+          
+      
+    </div>
+    
+    <!--SCRIPTS-->
+    <footer>
+      <% include ../partials/footer %>
+  </footer>
+
+</body>
+
+</html>
